@@ -1,9 +1,9 @@
 function compras(trabalho1, trabalho2) {
-    const comprarSorvete = trabalho1 || trabalho2
-    const comprarTv50 = trabalho1 && trabalho2
-    // const comprarTv32 = !!(trabalho1 ^ trabalho2) // bitwise xor
-    const comprarTv32 = trabalho1 != trabalho2
-    const manterSaudavel = !comprarSorvete // operador unário
+    const comprarSorvete = trabalho1 || trabalho2 // || ou
+    const comprarTv50 = trabalho1 && trabalho2 // && e
+    // const comprarTv32 = !!(trabalho1 ^ trabalho2) // bitwise xor 
+    const comprarTv32 = trabalho1 != trabalho2 // != diferente ou exclusivo
+    const manterSaudavel = !comprarSorvete // operador unário ! nega o valor
 
     return { comprarSorvete, comprarTv50, comprarTv32, manterSaudavel }
 }
